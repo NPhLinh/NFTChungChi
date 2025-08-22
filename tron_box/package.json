@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "openzeppelin-solidity": "^2.3.0",
+    "solc": "^0.5.10",
+    "tronweb": "^5.0.0"
+  },
+  "scripts": {
+    "download": "node scripts/download_solc.js",
+    "compile": "tronbox compile --compile-all --verbose-rpc",
+    "migrate": "tronbox migrate --network shasta --reset --compile-all --verbose-rpc",
+    "server": "node scripts/api.js"
+  }
+}
